@@ -209,8 +209,8 @@ if camera_source in ["IP Camera", "Both"]:
     """)
     
     ip_address = st.sidebar.text_input(
-        "IP Address (e.g., 192.168.0.20)",
-        "192.168.0.20"
+        "IP Address (e.g., 192.168.1.100)",
+        ""
     )
     
     ip_camera_url = f"http://{ip_address}:4747"
