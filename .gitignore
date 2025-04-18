@@ -4,6 +4,30 @@ __pycache__/
 *$py.class
 *.so
 .Python
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+*.jpg
+*.png
+*.mp4
+*.avi
+*.weights
+
+# Virtual Environment
 build/
 develop-eggs/
 dist/
@@ -19,27 +43,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Virtual Environment
-venv/
-ENV/
-env/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Project specific
-*.jpg
-*.jpeg
-*.png
-*.mp4
-*.avi
-*.csv
-*.json
-!requirements.txt
 
 # Logs
 *.log 
