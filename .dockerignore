@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs and data
+logs/
+*.log
+data/
+*.db
+
+# Exports
+exports/
+snapshots/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Tests
+tests/
+.pytest_cache/
+.coverage
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.pt
+*.onnx
+*.engine
+detection_log_*.csv
+

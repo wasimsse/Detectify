@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  detectify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: detectify
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./exports:/app/exports
+      - ./snapshots:/app/snapshots
+      - ./logs:/app/logs
+    environment:
+      - APP_NAME=Detectify
+      - APP_VERSION=2.0.0
+      - DEBUG=False
+      - ENABLE_GPU=False  # Set to True if using GPU
+    restart: unless-stopped
+    networks:
+      - detectify-network
+    # Uncomment below for GPU support (requires nvidia-docker)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+networks:
+  detectify-network:
+    driver: bridge
+
+volumes:
+  data:
+  exports:
+  snapshots:
+  logs:
+
